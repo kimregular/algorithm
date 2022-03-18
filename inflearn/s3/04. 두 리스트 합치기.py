@@ -1,18 +1,26 @@
 import sys
 
-sys.stdin = open('04. 두 리스트 합치기' ,'rt')
-n1 = int(input())
-lst1 = list(map(int, sys.stdin.readline().split()))
-n2 = int(input())
-lst2 = list(map(int, sys.stdin.readline().split()))
-p = q = 0
-nlst = []
+sys.stdin = open('04. 두 리스트 합치기', 'rt')
 
-while len(nlst) < len(lst1 + lst2):
-    if lst1[p] < lst2[q]:
-        nlst.append(lst1[p])
-        p += 1
-    else:
-        nlst.append(lst2[q])
+n = int(input())
+alst = list(map(int, sys.stdin.readline().split()))
+m = int(input())
+blst = list(map(int, sys.stdin.readline().split()))
+q = p = 0
+lst = []
+i = 0
+while i < (n + m):
+    if q >= len(alst) :
+        lst += blst[p:]
+        break
+    elif p >= len(blst):
+        lst += alst[q:]
+        break
+    if alst[q] < blst[p]:
+        lst.append(alst[q])
         q += 1
-print(nlst)
+    else:
+        lst.append(blst[p])
+        p += 1
+
+print(*lst)
