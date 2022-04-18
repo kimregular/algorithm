@@ -1,5 +1,6 @@
-import sys
+import sys, os
 
+os.chdir('./s3')
 sys.stdin = open('09. 봉우리', 'rt')
 
 n = int(input())

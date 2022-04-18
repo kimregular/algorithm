@@ -1,5 +1,6 @@
 import sys, os
 
+os.chdir('./s2')
 sys.stdin = open('01. k번째 약수', 'rt')
 n, m = map(int, sys.stdin.readline().split())
 cnt = 0

@@ -1,4 +1,6 @@
-import sys
+import sys, os
+
+os.chdir('./s3')
 
 sys.stdin = open('06. 격자판 최대합' ,'rt')
 n = int(input())

@@ -1,4 +1,6 @@
-import sys
+import sys, os
+
+os.chdir('./s3')
 
 sys.stdin = open('08. 곳감(모래시계)', 'rt')
 

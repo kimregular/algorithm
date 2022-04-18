@@ -1,4 +1,6 @@
-import sys
+import sys, os
+
+os.chdir('./s3')
 
 sys.stdin = open('07. 사과나무(다이아몬드)' ,'rt')
 n = int(input())
