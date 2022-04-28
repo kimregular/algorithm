@@ -1,4 +1,4 @@
 import os
 
-os.chdir('./s2')
+# os.('./s2')
 print(os.getcwd())
