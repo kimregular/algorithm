@@ -41,8 +41,8 @@ public class no10 {
     String[] fi = new String[2];
     fi = rd.nextLine().split(" ");
     String str = fi[0];
-    String s1 = fi[1];
-    char s = s1.charAt(0);
+    char s = fi[1].charAt(0);
+    // char s = s1.charAt(0);
     for (int x : T.solution(str, s)) {
       System.out.print(x + " ");
     }
