@@ -1,4 +1,4 @@
-package TP.no2;
+package TP.no1;
 
 import java.io.File;
 import java.io.IOException;

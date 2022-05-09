@@ -1,6 +1,5 @@
 package array.no6;
 
-import com.apple.laf.resources.aqua;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
